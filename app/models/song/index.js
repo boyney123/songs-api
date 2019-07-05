@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const SongSchema = new Schema({
-  title: { type: String, default: "" }
+  title: { type: String },
+  duration: { type: String }
 });
 
 SongSchema.statics = {
