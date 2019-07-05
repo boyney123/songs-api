@@ -4,9 +4,9 @@ require("dotenv").config();
 
 const express = require("express");
 const helmet = require("helmet");
-const { middleware: logger } = require("../app/config/logger");
 const cookieParser = require("cookie-parser");
 
+const { middleware: logger } = require("../app/config/logger");
 const connect = require("./config/database");
 const songsRouter = require("./routes/songs");
 
